@@ -1877,7 +1877,7 @@ $(document).ready(function() {
       }, 500);
 
       // Display the total cost with 'S$' in front of it
-      $("#price-text").text(`S$${totalCostPerEmployee.toFixed(2)}`);
+      $("#price-text").text(`S$${Math.round(totalCostPerEmployee)}`);
     } else {
       // Show an alert or display a message when no benefit is selected
       alert("Please select at least one benefit before proceeding.");
